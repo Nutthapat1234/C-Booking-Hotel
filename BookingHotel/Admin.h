@@ -1,0 +1,8 @@
+//
+// Created by NP-1999 on 11/14/2018.
+//
+
+#ifndef BOOKINGHOTEL_ADMIN_H
+#define BOOKINGHOTEL_ADMIN_H
+
+#endif //BOOKINGHOTEL_ADMIN_H
