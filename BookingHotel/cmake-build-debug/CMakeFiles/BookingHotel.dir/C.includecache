@@ -10,7 +10,13 @@ C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/inclu
 stdarg.h
 -
 
-C:/Users/NP-1999/CLionProjects/BookingHotel/Hotel.h
+C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/Admin.h
+stdio.h
+-
+string.h
+-
+
+C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/Hotel.h
 stdio.h
 -
 stdlib.h
@@ -18,11 +24,13 @@ stdlib.h
 sqlite3.h
 -
 
-C:/Users/NP-1999/CLionProjects/BookingHotel/main.c
+C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/main.c
 stdio.h
 -
 string.h
 -
 Hotel.h
-C:/Users/NP-1999/CLionProjects/BookingHotel/Hotel.h
+C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/Hotel.h
+Admin.h
+C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/Admin.h
 
