@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
 //        index++;
 //    }
 //    printf("%d %d",rangeRoom[0],rangeRoom[1]);
-    hotel();
-
+//    hotel();
+    login("Admin","rootAdmin");
 }
 
