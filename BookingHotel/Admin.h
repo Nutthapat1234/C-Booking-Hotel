@@ -60,15 +60,26 @@ void menuAdmin(){
 
 }
 
-void login(char* user,char* pass){
-    int check_user = strcmp(user,"Admin"),
-            check_pass = strcmp(pass,"rootAdmin");
-    if(check_user && check_pass){
-        printf("Username or Password is invalid\n");
-        return;
-    }
-    else
-        menuAdmin();
+void login(){
+    char user[10],pass[10];
+    int check = 0;
+    do {
+        printf("Enter Username (b to back): ");
+        scanf("%s", user);
+        if (strcmp(user, "b") == 0)
+            return;
+        printf("Enter Password: ");
+        scanf("%s", pass);
+        int check_user = strcmp(user, "Admin"),
+                check_pass = strcmp(pass, "rootAdmin");
+        if (check_user && check_pass) {
+            printf("Username or Password is invalid\n");
+
+        } else {
+            menuAdmin();
+            check = 1;
+        }
+    }while(check == 0);
 }
 
 #endif //BOOKINGHOTEL_ADMIN_H

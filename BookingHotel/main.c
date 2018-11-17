@@ -2,40 +2,44 @@
 #include <string.h>
 #include "Hotel.h"
 #include "Admin.h"
+#include "User.h"
 
-int validateNumber(char* noRoom){
+void home(){
+    char* name;
     int check = 0;
-    char * pch;
-    pch =  strchr(noRoom,'-');
-    while (pch!=NULL)
-    {
-        check += 1;
-        pch=strchr(pch+1,'-');
-    }
-    return check;
+    do{
+        int command = 0;
+        printf("1. Select By Hotel\n");
+        printf("2. Check Booking detail by name\n");
+        printf("3. Check Booking detail by phone number\n");
+        printf("4. Add Hotel or more Information\n");
+        printf("5. Exit\n");
+        printf("Enter your Command :");
+        scanf(" %d",&command);
+        fflush(stdin);
+        switch (command){
+            case 1:
+                hotel();
+                break;
+            case 2:
+                search(0);
+                break;
+            case 3:
+                search(1);
+                break;
+            case 4:
+                break;
+            case 5:
+                check = 1;
+                break;
+            default:
+                printf("Invalid command, please input again\n");
+        }
+    }while(check == 0 );
+    printf("Thank you for using program\n");
 }
 
 int main(int argc, char* argv[]) {
-//    char *type_room;
-//    char noRoom[100];
-//    int rangeRoom[2] , index = 0;
-////    printf("Enter Type of Room:");
-////    scanf("%s",type_room);
-//    printf("Enter Room number(e.g 101-109)");
-//    scanf("%s",noRoom);
-//
-//
-//    char *token = strtok(noRoom, "-");
-//    while (token != NULL)
-//    {
-//        char buffer[100];
-//
-//        printf("%s\n",token);
-//        token = strtok(NULL, "-");
-//        index++;
-//    }
-//    printf("%d %d",rangeRoom[0],rangeRoom[1]);
-//    hotel();
-    login("Admin","rootAdmin");
+    home();
 }
 

@@ -6,9 +6,12 @@
 #define BOOKINGHOTEL_HOTEL_H
 
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
-#include <sqlite3.h>
+#include "User.h"
 
+void roomDetail(char* hotelname);
+void hotel();
 
 typedef struct hotel {
     char* name;
@@ -108,7 +111,7 @@ void write_file(Room* room,char* filename){
     fclose(f);
 }
 
-void booking(char* all_room){
+void booking(char* all_room, char* hotelname){
     FILE * all;
     all  = fopen(all_room,"r+");
     Room *room = NULL;
@@ -128,12 +131,20 @@ void booking(char* all_room){
     }
 
     char n[3];
-    int check = 1;
+    int check = 0, invalid = 0;
+
 
     do {
         printf("Enter the room number that avalible(or b to back):");
         scanf("%s", n);
         Room *sub = room;
+        if(strcmp(n,"b")== 0){
+            char* hotel = hotelname;
+            strtok(hotel,"_");
+            strcat(hotel,".txt");
+            roomDetail(hotel);
+            return;
+        }
         while (sub != NULL) {
             if (strcmp(sub->room_num, n) == 0 && sub->status == 1) {
                 char cf;
@@ -141,13 +152,27 @@ void booking(char* all_room){
                 getchar();
                 scanf("%c",&cf);
                 if(cf == 'y'){
+                    information();
                     sub->status = 0;
+                    break;
                 }
                 check = 1;
             }
+            else if (strcmp(sub->room_num, n) == 0 && sub->status == 0){
+                printf("This room is already booking\n");
+                invalid = 0;
+                break;
+            }
+            else
+                invalid = 1;
+
             sub = sub->next;
         }
-        if (check == 0) printf("Your select is invalid or selcet not avalible room !!!");
+        if(invalid == 1)
+            printf("Your select is invalid or not avalible\n");
+
+        invalid = 0;
+
     }while (check == 0);
 
     if(check == 1){
@@ -216,12 +241,18 @@ void roomDetail(char* hotelname){
     fclose(roomlst);
 
     char* room_name;
+    char c[1];
     int room_status,command,check = 1;
 
     do {
         Roomtype *select_room = roomLink;
-        printf("Enter the selected room type: ");
-        scanf("%d", &command);
+        printf("Enter the selected room type (or b to back): ");
+        scanf("%s", c);
+        command = atoi(c);
+        if(strcmp(c,"b")== 0){
+            hotel();
+            return;
+        }
         for (int i = 0; i < command; i++) {
             room_name = select_room->name;
             room_status = select_room->status;
@@ -234,11 +265,11 @@ void roomDetail(char* hotelname){
 
     }while(check);
 
-    booking(room_name);
+    booking(room_name,hotelname);
 
 }
 
-int hotel() {
+void hotel() {
     FILE *hotelst;
     char buffer[255];
     Hotel *hotel = NULL;
@@ -258,13 +289,18 @@ int hotel() {
     fclose(hotelst);
 
     int command;
+    char c[1];
     Hotel* selecthotel = hotel;
     char* hotelname;
     int check = 1;
 
     do{
-    printf("\nSelect Hotel: ");
-    scanf("%d",&command);
+    printf("\nSelect Hotel(or b to back): ");
+    scanf("%s",c);
+    if(strcmp(c,"b")== 0) {
+        return;
+    }
+    command = atoi(c);
     if(!(command != 0 && command < len_hotel)) printf("Invalid Select Hotel!!!");
     else check = 0;
     }while (check);

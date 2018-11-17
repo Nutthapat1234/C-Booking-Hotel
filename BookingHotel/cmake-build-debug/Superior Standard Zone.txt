@@ -1,4 +1,4 @@
-101 : Avalible
+101 : Full
 102 : Avalible
 103 : Avalible
 104 : Full

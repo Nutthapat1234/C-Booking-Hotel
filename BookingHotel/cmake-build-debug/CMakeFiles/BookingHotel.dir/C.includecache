@@ -6,31 +6,39 @@
 
 #IncludeRegexTransform: 
 
-C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/include/sqlite3.h
-stdarg.h
--
-
-C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/Admin.h
+D:/C-Booking-Hotel/BookingHotel/Admin.h
 stdio.h
 -
 string.h
 -
 
-C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/Hotel.h
+D:/C-Booking-Hotel/BookingHotel/Hotel.h
 stdio.h
+-
+string.h
 -
 stdlib.h
 -
-sqlite3.h
+User.h
+D:/C-Booking-Hotel/BookingHotel/User.h
+
+D:/C-Booking-Hotel/BookingHotel/User.h
+stdio.h
+-
+string.h
+-
+stdlib.h
 -
 
-C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/main.c
+D:/C-Booking-Hotel/BookingHotel/main.c
 stdio.h
 -
 string.h
 -
 Hotel.h
-C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/Hotel.h
+D:/C-Booking-Hotel/BookingHotel/Hotel.h
 Admin.h
-C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/Admin.h
+D:/C-Booking-Hotel/BookingHotel/Admin.h
+User.h
+D:/C-Booking-Hotel/BookingHotel/User.h
 
