@@ -135,7 +135,7 @@ void booking(char* all_room, char* hotelname){
 
 
     do {
-        printf("Enter the room number that avalible(or b to back):");
+        printf("Enter the room number that avalible( b to back):");
         scanf("%s", n);
         Room *sub = room;
         if(strcmp(n,"b")== 0){

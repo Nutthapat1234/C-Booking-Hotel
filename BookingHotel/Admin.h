@@ -7,36 +7,54 @@
 
 #include<stdio.h>
 #include<string.h>
+#include <stdlib.h>
 
 void addHotel(){
-    FILE *hotelfile,*file;
+    FILE *hotelfile,*room,*hotel;
     hotelfile = fopen("Hotelname.txt","a");
     char hotelname[255];
     printf("Enter Hotelname :");
     scanf("%s",hotelname);
 
+    strcat(hotelname,"\n");
     fputs(hotelname,hotelfile);
+    strtok(hotelname,"\n");
+
+    fclose(hotelfile);
+
+    char *hotel_room = (char*)malloc(sizeof(hotelname));
+    hotel_room = hotelname;
+    strcat(hotel_room,"_room.txt");
+    room = fopen(hotel_room,"a");
+    strtok(hotel_room,"_");
+
+    char roomtype[] = "Room Type : ";
+    char buffer[255];
+    printf("Enter Room Type : ");
+    scanf("%s",buffer);
+
+    strcat(buffer,".txt\n");
+    fputs(buffer,room);
+    strtok(buffer,".");
+    fclose(room);
 
     strcat(hotelname,".txt");
+    hotel = fopen(hotelname,"w");
+    strcat(roomtype,buffer);
+    strcat(roomtype,"\n");
+    fputs(roomtype,hotel);
+
+    char des[] = "     Description :  ";
+    printf("Enter Description(1 line per 1 option) : ");
+    scanf("%s",buffer);
+    strcat(buffer,"\n");
+    strcat(des,buffer);
+    fputs(des,hotel);
 
 
-//    file = fopen(hotelname,"w");
-
-//
-//    char roomtype[] = "Room Type : ";
-//    char buffer[255];
-//    printf("Enter Room Type : ");
-//    scanf("%s",buffer);
-//    strcat(roomtype,buffer);
-//    fputs(roomtype,file);
-//    char des[] = "     Description :  ";
 //    char more;
 //
-//    printf("Enter Description(1 line per 1 option) : "); //for beautiful format
-//    scanf("%s",buffer);
-//    strcat(buffer,"\n");
-//    strcat(des,buffer);
-//    fputs(des,file);
+
 //
 //    do {
 //        printf("Do you want to add more description? (y to add more):");

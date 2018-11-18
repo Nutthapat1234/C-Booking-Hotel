@@ -11,6 +11,8 @@ stdio.h
 -
 string.h
 -
+stdlib.h
+-
 
 D:/C-Booking-Hotel/BookingHotel/Hotel.h
 stdio.h

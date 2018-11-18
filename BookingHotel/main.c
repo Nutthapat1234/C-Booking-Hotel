@@ -33,6 +33,7 @@ void home(){
                 search(1);
                 break;
             case 4:
+                menuAdmin();
                 break;
             case 5:
                 check = 1;
