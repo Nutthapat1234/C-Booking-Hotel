@@ -9,35 +9,41 @@
 #include<string.h>
 
 void addHotel(){
-    FILE *file;
+    FILE *hotelfile,*file;
+    hotelfile = fopen("Hotelname.txt","a");
     char hotelname[255];
     printf("Enter Hotelname :");
     scanf("%s",hotelname);
+
+    fputs(hotelname,hotelfile);
+
     strcat(hotelname,".txt");
-    file = fopen(hotelname,"w");
 
 
-    char roomtype[] = "Room Type : ";
-    char buffer[255];
-    printf("Enter Room Type : ");
-    scanf("%s",buffer);
-    strcat(roomtype,buffer);
-    fputs(roomtype,file);
-    char des[] = "     Description :  ";
-    char more;
+//    file = fopen(hotelname,"w");
 
-    printf("Enter Description(1 line per 1 option) : "); //for beautiful format
-    scanf("%s",buffer);
-    strcat(buffer,"\n");
-    strcat(des,buffer);
-    fputs(des,file);
-
-    do {
-        printf("Do you want to add more description? (y to add more):");
-        scanf("%c",&more);
-    }while(more == 'y');
-
-    fclose(file);
+//
+//    char roomtype[] = "Room Type : ";
+//    char buffer[255];
+//    printf("Enter Room Type : ");
+//    scanf("%s",buffer);
+//    strcat(roomtype,buffer);
+//    fputs(roomtype,file);
+//    char des[] = "     Description :  ";
+//    char more;
+//
+//    printf("Enter Description(1 line per 1 option) : "); //for beautiful format
+//    scanf("%s",buffer);
+//    strcat(buffer,"\n");
+//    strcat(des,buffer);
+//    fputs(des,file);
+//
+//    do {
+//        printf("Do you want to add more description? (y to add more):");
+//        scanf("%c",&more);
+//    }while(more == 'y');
+//
+//    fclose(file);
 }
 
 void menuAdmin(){
