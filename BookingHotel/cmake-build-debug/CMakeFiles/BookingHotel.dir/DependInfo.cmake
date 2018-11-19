@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/C-Booking-Hotel/BookingHotel/main.c" "D:/C-Booking-Hotel/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/main.c.obj"
+  "C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/main.c" "C:/Users/NP-1999/Documents/GitHub/C  Booking Hotel/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/include"
   )
 
 # Targets to which this target links.

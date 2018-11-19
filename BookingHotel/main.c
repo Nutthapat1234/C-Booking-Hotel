@@ -47,5 +47,7 @@ void home(){
 
 int main(int argc, char* argv[]) {
     home();
+//    addHotel();
 }
+
 

@@ -301,7 +301,7 @@ void hotel() {
         return;
     }
     command = atoi(c);
-    if(!(command != 0 && command < len_hotel)) printf("Invalid Select Hotel!!!");
+    if(command != 0 && command > len_hotel) printf("Invalid Select Hotel!!!");
     else check = 0;
     }while (check);
 
