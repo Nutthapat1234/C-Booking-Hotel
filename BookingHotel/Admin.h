@@ -34,7 +34,7 @@ void addHotel(){
 
     char hotelname[255];
     printf("Enter Hotelname :");
-    scanf("%[^\n]", hotelname);
+    scanf("%s", hotelname);
     seek_to_next_line();
     if(check_duplicate(hotelname)) {
         strcat(hotelname, "\n");
@@ -49,52 +49,82 @@ void addHotel(){
     room = fopen(hotel_room,"a");
     strtok(hotel_room,"_");
 
-    char roomtype[] = "Room Type : ";
-    char buffer[255];
-    printf("Enter Room Type : ");
-    scanf("%s",buffer);
-    seek_to_next_line();
+    char moreRoom;
 
-    strcat(buffer,".txt\n");
-    fputs(buffer,room);
-    strtok(buffer,".");
-    fclose(room);
-
-    strcat(hotelname,".txt");
-    hotel = fopen(hotelname,"a");
-    strcat(roomtype,buffer);
-    strcat(roomtype,"\n");
-    fputs(roomtype,hotel);
-
-    int check = 0;
-    do {
-        char des[50];
-        if(firstdes)
-            strcpy(des,"     Description :  ");
-        else
-            strcpy(des,"                 :  ");
-        printf("Enter Description(1 line per 1 option) : ");
-        scanf("%[^\n]", buffer);
+    do{
+        char roomtype[] = "Room Type : ";
+        char buffer[255];
+        printf("Enter Room Type : ");
+        scanf("%s",buffer);
         seek_to_next_line();
 
-        strcat(buffer, "\n");
-        strcat(des, buffer);
-        fputs(des, hotel);
+        strcat(buffer,".txt\n");
+        fputs(buffer,room);
+        strtok(buffer,".");
+        fclose(room);
 
-        char more;
-        printf("Do you want to add more description? (y to add more):");
-        scanf("%c",&more);
+        strcat(hotelname,".txt");
+        hotel = fopen(hotelname,"a");
+        strcat(roomtype,buffer);
+        strcat(roomtype,"\n");
+        fputs(roomtype,hotel);
+
+        int check = 0;
+        do {
+            char des[50];
+            if(firstdes)
+                strcpy(des,"     Description :  ");
+            else
+                strcpy(des,"                 :  ");
+            printf("Enter Description(1 line per 1 option) : ");
+            scanf("%[^\n]", buffer);
+            seek_to_next_line();
+
+            strcat(buffer, "\n");
+            strcat(des, buffer);
+            fputs(des, hotel);
+
+            char more;
+            printf("Do you want to add more description? (y to add more):");
+            scanf("%c",&more);
+            seek_to_next_line();
+            printf("You entered %c",more);
+
+            if(more == 'y') {
+                firstdes = 0;
+                check = 1;
+            }
+            else {
+                firstdes = 1;
+                check = 0;
+            }
+        }while (check == 1);
+
+        char people[] = "     People suggest: ";
+        char detail[255];
+        printf("Enter people suggest: ");
+        scanf("%s",detail);
+        seek_to_next_line();
+        strcat(detail,"\n");
+        strcat(people,detail);
+        fputs(people,room);
+
+        char price[] = "     Price: ";
+        char p[10];
+        printf("Enter the price :");
+        scanf("%s",p);
         seek_to_next_line();
 
-        if(more == 'y') {
-            firstdes = 0;
-            check = 1;
-        }
-        else {
-            firstdes = 1;
-            check = 0;
-        }
-    }while (check == 1);
+        strcat(p,"\n");
+        strcat(price,p);
+        fputs(price,room);
+
+
+        printf("Do you want to add more room type(y to add): ");
+        scanf("%c",&moreRoom);
+        seek_to_next_line()
+        printf("You entered %c",moreRoom);
+    }while (moreRoom == 'y');
 
     fclose(hotelfile);
     fclose(room);
