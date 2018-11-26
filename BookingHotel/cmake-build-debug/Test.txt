@@ -1,0 +1,4 @@
+Room Type : testroom
+     Description :  free wifi
+     People suggest: 2
+     Price: 500

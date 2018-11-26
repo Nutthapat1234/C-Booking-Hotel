@@ -13,17 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a3aa4ab-c6be-47cd-aa7b-c0fb26764f3d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/Admin.h" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/Admin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/Hotel.h" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/Hotel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/User.h" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/User.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/BookingHotel.exe" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/BookingHotel.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Hotelname.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Hotelname.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingHotel/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/BookingHotel/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,10 +63,11 @@
     <session id="1741473953">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -86,13 +76,13 @@
           <entry key="c" value="100" />
           <entry key="h" value="3944" />
           <entry key="m" value="112" />
-          <entry key="txt" value="300" />
+          <entry key="txt" value="311" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="ObjectiveC" value="4156" />
-          <entry key="PLAIN_TEXT" value="308" />
+          <entry key="PLAIN_TEXT" value="319" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -118,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookingHotel/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="360">
               <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -131,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -140,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -148,7 +138,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookingHotel/Hotel.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1209">
+            <state relative-caret-position="816">
               <caret line="34" column="36" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="36" />
               <folding>
                 <element signature="e#103#121#0" expanded="true" />
@@ -160,8 +150,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BookingHotel/Admin.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state relative-caret-position="-461">
+              <caret line="40" column="31" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="31" />
               <folding>
                 <element signature="e#104#121#0" expanded="true" />
               </folding>
@@ -172,7 +162,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookingHotel/User.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="744">
               <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="e#97#115#0" expanded="true" />
@@ -238,17 +228,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="82" />
-    <option name="y" value="23" />
-    <option name="width" value="1752" />
-    <option name="height" value="972" />
+    <option name="x" value="81" />
+    <option name="y" value="22" />
+    <option name="width" value="1753" />
+    <option name="height" value="973" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,6 +260,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,7 +310,8 @@
       <updated>1542433342062</updated>
       <workItem from="1542433345135" duration="25418000" />
       <workItem from="1543049008961" duration="11924000" />
-      <workItem from="1543217485029" duration="22408000" />
+      <workItem from="1543217485029" duration="22442000" />
+      <workItem from="1543252548570" duration="1153000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1542450110399</created>
@@ -343,11 +334,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543216826618</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix bug">
+      <created>1543244848853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543244848853</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59750000" />
+    <option name="totallyTimeSpent" value="60937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,14 +360,14 @@
     <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23067847" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23362832" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32806805" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.399757" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32806805" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399757" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32928312" />
@@ -396,7 +394,8 @@
     <MESSAGE value="Update" />
     <MESSAGE value="validate input" />
     <MESSAGE value="Add function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add function" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -577,16 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -601,34 +590,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/4546.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/Hotel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1209">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="36" />
-          <folding>
-            <element signature="e#103#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/4546.txt" />
     <entry file="file://C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/i686-w64-mingw32/include/string.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -636,9 +598,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/Hotel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="e#103#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookingHotel/User.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="744">
           <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding>
             <element signature="e#97#115#0" expanded="true" />
@@ -648,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BookingHotel/Admin.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        <state relative-caret-position="-461">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="31" />
           <folding>
             <element signature="e#104#121#0" expanded="true" />
           </folding>
