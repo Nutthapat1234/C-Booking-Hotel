@@ -9,7 +9,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-void information(){
+void information(char room_number[10],char room_type[50]){
     char name[128],number[128],date[128];
 
     printf("Enter your name:");
@@ -29,6 +29,11 @@ void information(){
     strcat(inf,number);
     strcat(inf," : ");
     strcat(inf,date);
+    strcat(inf," : ");
+    strcat(inf,room_number);
+    strcat(inf," : ");
+    strcat(inf,strtok(room_type,"."));
+
 
     FILE *file;
     file  = fopen("Customer.txt","a");
@@ -39,7 +44,7 @@ void information(){
 void search(int version){
     FILE *file;
     file  = fopen("Customer.txt","r");
-    char name[128],number[128],date[128],input[128];
+    char name[128],number[128],date[128],input[128],room[128],type[128];
     char c;
 
     do {
@@ -52,15 +57,15 @@ void search(int version){
         }
 
         int check = 0;
-        while (fscanf(file, "%s : %s : %s", name, number, date) != EOF) {
+        while (fscanf(file, "%s : %s : %s : %s : %[^\n]", name, number, date, room, type) != EOF) {
             if (version == 0) {
                 if (strcmp(name, input) == 0) {
-                    printf("%s : %s : %s\n", name, number, date);
+                    printf("%s : %s : %s : %s : %s\n", name, number, date, room, type);
                     check = 1;
                 }
             } else if (version == 1) {
                 if (strcmp(number, input) == 0) {
-                    printf("%s : %s : %s\n", name, number, date);
+                    printf("%s : %s : %s : %s : %s\n",  type);
                     check = 1;
                 }
             }

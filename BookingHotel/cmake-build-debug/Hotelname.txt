@@ -1,4 +1,5 @@
 Hilton
-Even
+Sripanwa
 The Park
-War Wick
+NovotelTest
+Test

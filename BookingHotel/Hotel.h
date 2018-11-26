@@ -130,7 +130,7 @@ void booking(char* all_room, char* hotelname){
         makeRoomList(&room,sub_room,status);
     }
 
-    char n[3];
+    char n[10];
     int check = 0, invalid = 0;
 
 
@@ -152,7 +152,7 @@ void booking(char* all_room, char* hotelname){
                 getchar();
                 scanf("%c",&cf);
                 if(cf == 'y'){
-                    information();
+                    information(n,all_room);
                     sub->status = 0;
                 }
                 check = 1;

@@ -13,7 +13,7 @@ void home(){
         printf("1. Select By Hotel\n");
         printf("2. Check Booking detail by name\n");
         printf("3. Check Booking detail by phone number\n");
-        printf("4. Add Hotel or more Information\n");
+        printf("4. Admin menu\n");
         printf("5. Exit\n");
         printf("Enter your Command :");
         scanf("%s",&c);
@@ -48,6 +48,11 @@ void home(){
 int main(int argc, char* argv[]) {
     home();
 //    addHotel();
+//    char b[100];
+//    scanf("%s",b);
+//    seek_to_next_line();
+//    printf("%s",b);
+
 }
 
 
