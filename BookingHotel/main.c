@@ -17,11 +17,11 @@ void home(){
         printf("5. Exit\n");
         printf("Enter your Command :");
         scanf("%s",&c);
+        seek_to_next_line();
         command = atoi(c);
         if(command > 5 || command < 0 || strlen(c) > 1){
             command = 0 ;
         }
-        fflush(stdin);
         switch (command){
             case 1:
                 hotel();

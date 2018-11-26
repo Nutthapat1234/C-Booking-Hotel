@@ -154,9 +154,9 @@ void booking(char* all_room, char* hotelname){
                 if(cf == 'y'){
                     information();
                     sub->status = 0;
-                    break;
                 }
                 check = 1;
+                break;
             }
             else if (strcmp(sub->room_num, n) == 0 && sub->status == 0){
                 printf("This room is already booking\n");
@@ -177,6 +177,7 @@ void booking(char* all_room, char* hotelname){
 
     if(check == 1){
         write_file(room,all_room);
+        printf("Success!!!\n");
     }
 }
 

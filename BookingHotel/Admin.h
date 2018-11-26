@@ -10,10 +10,97 @@
 #include<string.h>
 #include <stdlib.h>
 
+typedef struct customer_buffer{
+    char name[50];
+    char phone[50];
+    char date[50];
+    char room[50];
+    char price[50];
+    struct customer_buffer* next;
+}cus;
+
 void seek_to_next_line( void )
 {
     int c;
     while( (c = fgetc( stdin )) != EOF && c != '\n' );
+}
+
+void checkout(){
+    char room[10],name[25];
+    printf("Enter room to check out: ");
+    scanf("%s",room);
+    seek_to_next_line();
+
+    printf("Enter customer name:");
+    scanf("%s",name);
+    seek_to_next_line();
+
+    FILE *cuFile;
+    cus *bufferFile;
+    cus *b1;
+    int check_first = 1;
+    char buffer[255];
+    cuFile = fopen("Customer.txt","r");
+    char bname[10],bphone[10],bdate[10],broom[10],bprice[10];
+    while(fscanf(cuFile,"%s : %s : %s : %s : %s",bname,bphone,bdate,broom,bprice) != EOF){
+        cus * scan_buffer = (cus*)malloc(sizeof(cus));
+        strcpy(scan_buffer->name,"");
+        strcat(scan_buffer->name,bname);
+
+        strcpy(scan_buffer->phone,"");
+        strcat(scan_buffer->phone,bphone);
+
+        strcpy(scan_buffer->date,"");
+        strcat(scan_buffer->date,bdate);
+
+        strcpy(scan_buffer->room,"");
+        strcat(scan_buffer->room,broom);
+
+        strcpy(scan_buffer->price,"");
+        strcat(scan_buffer->price,bprice);
+
+        scan_buffer->next = NULL;
+
+        if(check_first){
+            b1 = scan_buffer;
+            bufferFile = scan_buffer;
+            check_first = 0;
+        }
+        else{
+            b1->next = scan_buffer;
+            b1 = b1->next;
+        }
+    }
+
+    fseek(cuFile,0,SEEK_SET);
+    fclose(cuFile);
+    cuFile = fopen("Customer.txt","w");
+
+    while(bufferFile != NULL){
+        strcmp(bufferFile->name,name);
+        strcmp(bufferFile->room,room);
+        if(strcmp(bufferFile->name,name) == 0 && strcmp(bufferFile->room,room) == 0){
+            bufferFile = bufferFile->next;
+            continue;
+        }
+        else{
+            char sub[255] = "";
+            strcat(sub,bufferFile->name);
+            strcat(sub," : ");
+            strcat(sub,bufferFile->phone);
+            strcat(sub," : ");
+            strcat(sub,bufferFile->date);
+            strcat(sub," : ");
+            strcat(sub,bufferFile->room);
+            strcat(sub," : ");
+            strcat(sub,bufferFile->price);
+            strcat(sub,"\n");
+            fputs(sub,cuFile);
+        }
+
+        bufferFile = bufferFile->next;
+    }
+    fclose(cuFile);
 }
 
 int check_duplicate(char* filename){
@@ -88,7 +175,7 @@ void addHotel(){
             printf("Do you want to add more description? (y to add more):");
             scanf("%c",&more);
             seek_to_next_line();
-            printf("You entered %c",more);
+            printf("You entered %c\n",more);
 
             if(more == 'y') {
                 firstdes = 0;
@@ -119,11 +206,16 @@ void addHotel(){
         strcat(price,p);
         fputs(price,room);
 
+        char sroom[10];
+        printf("Enter strating room number: ");
+        scanf("%s",sroom);
+        seek_to_next_line();
+
 
         printf("Do you want to add more room type(y to add): ");
         scanf("%c",&moreRoom);
-        seek_to_next_line()
-        printf("You entered %c",moreRoom);
+        seek_to_next_line();
+        printf("You entered %c\n",moreRoom);
     }while (moreRoom == 'y');
 
     fclose(hotelfile);
@@ -141,8 +233,8 @@ void menuAdmin(){
         scanf("%d", &command);
         if(command == 1)
             addHotel();
-        else if(command == 2);
-//            checkout();
+        else if(command == 2)
+            checkout();
         else if(command == 3)
             check = 1;
         else
