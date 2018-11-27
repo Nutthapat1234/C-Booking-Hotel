@@ -12,14 +12,6 @@
 #include <ctype.h>
 #include "Hotel.h"
 
-typedef struct customer_buffer{
-    char name[50];
-    char phone[50];
-    char date[50];
-    char room[50];
-    char price[50];
-    struct customer_buffer* next;
-}cus;
 
 void seek_to_next_line( void )
 {
@@ -29,84 +21,62 @@ void seek_to_next_line( void )
 
 
 void checkout(char room[10],char name[10]){
-    FILE *cuFile;
-    cus *bufferFile;
-    cus *b1;
+    FILE *cuFile,*file;
     int check_first = 1;
     char buffer[255];
+    char a[20] = " ";
+    strcat(a,name);
     cuFile = fopen("Customer.txt","r");
-    char bname[10],bphone[10],bdate[10],broom[10],btype[30],type[10];
-    while(fscanf(cuFile,"%s : %s : %s : %s : %[^\n]",bname,bphone,bdate,broom,btype) != EOF){
-        if(!strcmp(bname,name)){
-            strcpy(type,btype);
-        }
-        cus * scan_buffer = (cus*)malloc(sizeof(cus));
-        strcpy(scan_buffer->name,"");
-        strcat(scan_buffer->name,bname);
-
-        strcpy(scan_buffer->phone,"");
-        strcat(scan_buffer->phone,bphone);
-
-        strcpy(scan_buffer->date,"");
-        strcat(scan_buffer->date,bdate);
-
-        strcpy(scan_buffer->room,"");
-        strcat(scan_buffer->room,broom);
-
-        strcpy(scan_buffer->price,"");
-        strcat(scan_buffer->price,btype);
-
-        scan_buffer->next = NULL;
-
-        if(check_first){
-            b1 = scan_buffer;
-            bufferFile = scan_buffer;
-            check_first = 0;
-        }
-        else{
-            b1->next = scan_buffer;
-            b1 = b1->next;
-        }
+    file = fopen("buffer.txt","w");
+    char bname[10],bphone[10],bdate[10],broom[10],btype[30],type[100];
+    while(fgets(buffer,255,cuFile) != NULL){
+        fputs(buffer,file);
     }
-
     fseek(cuFile,0,SEEK_SET);
+    fclose(file);
     fclose(cuFile);
     cuFile = fopen("Customer.txt","w");
-
-    while(bufferFile != NULL){
-        if(strcmp(bufferFile->name,name) == 0 && strcmp(bufferFile->room,room) == 0){
-            bufferFile = bufferFile->next;
+    file = fopen("buffer.txt","r");
+    ungetc(1,file);
+    while(fscanf(file,"%s : %s : %s : %s : %[^\n]",bname,bphone,bdate,broom,btype)!= EOF){
+        if(!strcmp(bname,a)&& !strcmp(broom,room)){
+            strcpy(type,btype);
             continue;
         }
         else{
             char sub[255] = "";
-            strcat(sub,bufferFile->name);
             strcat(sub," : ");
-            strcat(sub,bufferFile->phone);
+            strcat(sub,bphone);
             strcat(sub," : ");
-            strcat(sub,bufferFile->date);
+            strcat(sub,bdate);
             strcat(sub," : ");
-            strcat(sub,bufferFile->room);
+            strcat(sub,broom);
             strcat(sub," : ");
-            strcat(sub,bufferFile->price);
+            strcat(sub,btype);
             strcat(sub,"\n");
             fputs(sub,cuFile);
         }
-
-        bufferFile = bufferFile->next;
     }
+
     fclose(cuFile);
 
-    cuFile = fopen(type, "r");
-    char n[10];
-    int s;
+    cuFile = fopen(strcat(type,".txt"), "r");
+    char n[25];
+    char s[25];
     Room *r, *ar;
     int first = 1;
 
-    while (fscanf(cuFile, "%s : %d", n, s) != EOF) {
+    while (fscanf(cuFile, "%s : %s", n,s) != EOF) {
+        char *n_in = (char*)malloc(sizeof(n));
+        strcpy(n_in,n);
         Room *in = (Room *) malloc(sizeof(Room));
-        in->room_num = n;
-        in->status = s;
+        in->room_num = n_in;
+        int st;
+        if(strcmp(s,"Avalible") == 0)
+            st = 1;
+        else
+            st = 0;
+        in->status = st;
         in->next = NULL;
         if (first) {
             r = in;
@@ -127,10 +97,11 @@ void checkout(char room[10],char name[10]){
         strcat(buffer, ar->room_num);
         strcat(buffer, " : ");
 
-        if (strcmp(ar->room_num, broom)) {
+        if (strcmp(ar->room_num, broom) == 0) {
             strcat(buffer, "Avalible");
-        } else {
-            if (ar->status == 0)
+        }
+        else {
+            if (ar->status == 1)
                 strcat(buffer, "Avalible");
             else
                 strcat(buffer, "Full");
@@ -139,7 +110,6 @@ void checkout(char room[10],char name[10]){
         strcat(buffer, "\n");
         fputs(buffer, cuFile);
     }
-
     fclose(cuFile);
 }
 

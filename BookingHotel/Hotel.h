@@ -92,7 +92,7 @@ void makeRoomList(Room **lst, char *room_num, int s){
 void write_file(Room* room,char* filename){
     Room* sub = room;
     FILE *f;
-    f = fopen(filename,"w");
+    f = fopen(strcat(filename,".txt"),"w");
 
     while (sub != NULL) {
         char* new_room = (char*)malloc(sizeof(sub->room_num));
@@ -228,6 +228,7 @@ void roomDetail(char* hotelname){
     n = strcat(n,"_room.txt");
 
     int order = 1;
+    int number = 0;
 
     printf("-------Room Detail---------\n");
     while (fgets(buffer, sizeof(buffer),roomlst)){
@@ -236,24 +237,30 @@ void roomDetail(char* hotelname){
             order++;
         }
         printf("%s",buffer);
+        number++;
     }
     checkStatus(n,order,&roomLink);
 
     fclose(roomlst);
 
     char* room_name;
-    char c[1];
+    char c[2];
     int room_status,command,check = 1;
 
     do {
         Roomtype *select_room = roomLink;
         printf("Enter the selected room type (or b to back): ");
         scanf("%s", c);
-        command = atoi(c);
         if(strcmp(c,"b")== 0){
             hotel();
             return;
         }
+        command = atoi(c);
+        if(command < 0 || command > number || strlen(c)> 1){
+            printf("Enter invalid room type\n");
+            continue;
+        }
+
         for (int i = 0; i < command; i++) {
             room_name = select_room->name;
             room_status = select_room->status;

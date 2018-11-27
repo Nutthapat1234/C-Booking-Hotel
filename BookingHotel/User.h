@@ -23,7 +23,6 @@ void information(char room_number[10],char room_type[50]){
 
 
     char inf[255] =  "";
-    strcat(inf,"\n");
     strcat(inf,name);
     strcat(inf," : ");
     strcat(inf,number);
@@ -33,6 +32,7 @@ void information(char room_number[10],char room_type[50]){
     strcat(inf,room_number);
     strcat(inf," : ");
     strcat(inf,strtok(room_type,"."));
+    strcat(inf,"\n");
 
 
     FILE *file;

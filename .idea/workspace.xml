@@ -13,6 +13,19 @@
   <component name="ChangeListManager">
     <list default="true" id="9a3aa4ab-c6be-47cd-aa7b-c0fb26764f3d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/Admin.h" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/Admin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/Hotel.h" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/Hotel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/User.h" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/User.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/BookingHotel.exe" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/BookingHotel.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/BookingHotel.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Test_room.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/`@" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingHotel/cmake-build-debug/testroom.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/BookingHotel/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,31 +87,31 @@
         <counts>
           <entry key="Superior Standard Zone" value="8" />
           <entry key="c" value="100" />
-          <entry key="h" value="3944" />
-          <entry key="m" value="112" />
-          <entry key="txt" value="311" />
+          <entry key="h" value="5193" />
+          <entry key="m" value="257" />
+          <entry key="txt" value="354" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="4156" />
-          <entry key="PLAIN_TEXT" value="319" />
+          <entry key="ObjectiveC" value="5550" />
+          <entry key="PLAIN_TEXT" value="362" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="BookingHotel (disassembly)" value="27" />
+          <entry key="BookingHotel (disassembly)" value="34" />
           <entry key="Superior Standard Zone" value="2" />
           <entry key="c" value="1" />
-          <entry key="h" value="6" />
-          <entry key="txt" value="38" />
+          <entry key="h" value="7" />
+          <entry key="txt" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Disassembly" value="27" />
-          <entry key="ObjectiveC" value="7" />
-          <entry key="PLAIN_TEXT" value="40" />
+          <entry key="Disassembly" value="34" />
+          <entry key="ObjectiveC" value="8" />
+          <entry key="PLAIN_TEXT" value="51" />
         </counts>
       </usages-collector>
     </session>
@@ -108,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookingHotel/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="131">
               <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -118,40 +131,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookingHotel/Hotel.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="36" />
-              <folding>
-                <element signature="e#103#121#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Hilton.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BookingHotel/Admin.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-461">
-              <caret line="40" column="31" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="31" />
+            <state relative-caret-position="454">
+              <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
               <folding>
                 <element signature="e#104#121#0" expanded="true" />
               </folding>
@@ -160,10 +158,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/buffer.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookingHotel/Hotel.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+              <folding>
+                <element signature="e#103#121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookingHotel/User.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="147">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#97#115#0" expanded="true" />
               </folding>
@@ -199,6 +214,9 @@
       <find>ar</find>
       <find>malloc</find>
       <find>btype</find>
+      <find>type</find>
+      <find>write_file</find>
+      <find>bna</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,10 +229,10 @@
         <option value="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Test_room.txt.txt" />
         <option value="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Hotelname.txt" />
         <option value="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Test.txt" />
-        <option value="$PROJECT_DIR$/BookingHotel/Hotel.h" />
         <option value="$PROJECT_DIR$/BookingHotel/main.c" />
-        <option value="$PROJECT_DIR$/BookingHotel/User.h" />
         <option value="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone" />
+        <option value="$PROJECT_DIR$/BookingHotel/User.h" />
+        <option value="$PROJECT_DIR$/BookingHotel/Hotel.h" />
         <option value="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt" />
         <option value="$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt" />
         <option value="$PROJECT_DIR$/BookingHotel/Admin.h" />
@@ -311,7 +329,7 @@
       <workItem from="1542433345135" duration="25418000" />
       <workItem from="1543049008961" duration="11924000" />
       <workItem from="1543217485029" duration="22442000" />
-      <workItem from="1543252548570" duration="1153000" />
+      <workItem from="1543252548570" duration="13885000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1542450110399</created>
@@ -345,7 +363,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60937000" />
+    <option name="totallyTimeSpent" value="73669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,7 +376,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23362832" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -412,88 +429,79 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/BookingHotel/Hotel.h</url>
-          <line>254</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/BookingHotel/Hotel.h</url>
-          <line>162</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/BookingHotel/Hotel.h</url>
           <line>153</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/BookingHotel/Admin.h</url>
-          <line>271</line>
+          <line>242</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/BookingHotel/Admin.h</url>
-          <line>190</line>
+          <line>161</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/BookingHotel/Admin.h</url>
-          <line>208</line>
+          <line>179</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/BookingHotel/Admin.h</url>
-          <line>75</line>
-          <option name="timeStamp" value="46" />
+          <url>file://$PROJECT_DIR$/BookingHotel/Hotel.h</url>
+          <line>91</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/BookingHotel/Admin.h</url>
-          <line>99</line>
-          <option name="timeStamp" value="50" />
+          <line>95</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/BookingHotel/Admin.h</url>
-          <line>120</line>
-          <option name="timeStamp" value="51" />
+          <line>69</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/BookingHotel/Admin.h</url>
-          <line>38</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/BookingHotel/Admin.h</url>
-          <line>39</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/BookingHotel/Admin.h</url>
-          <line>40</line>
-          <option name="timeStamp" value="55" />
+          <line>46</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="bufferFile" language="ObjectiveC" />
-        <watch expression="type" language="ObjectiveC" />
-        <watch expression="strcmp(bname,name)" language="ObjectiveC" />
+        <watch expression="strcmp(bname,a)" language="ObjectiveC" />
+        <watch expression="strcmp(broom,room)" language="ObjectiveC" />
+        <watch expression="bname" language="ObjectiveC" />
+        <watch expression="a" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>strcmp(bname,name)</expression-string>
+        <expression-string>a</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>type</expression-string>
+        <expression-string>bname</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>btype</expression-string>
+        <expression-string>strcmp(broom,room)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>strcmp(bname,a)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>n</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -503,32 +511,22 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>name</expression-string>
+        <expression-string>scan_buffer-&gt;phone</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>bufferFile-&gt;name</expression-string>
+        <expression-string>scan_buffer-&gt;name</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>room</expression-string>
+        <expression-string>ar-&gt;room_num</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>bufferFile-&gt;room</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>by=bufferFile-&gt;name</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>strcmp(bufferFile-&gt;room,room)</expression-string>
+        <expression-string>strcmp(ar-&gt;room_num,broom)</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -548,9 +546,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Test_hotel_room.txt" />
     <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Test_room.txt.txt" />
-    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Hilton.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Hilton_room.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -569,24 +564,10 @@
     <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Test_room.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="60952" column="8" lean-forward="true" selection-start-line="60952" selection-start-column="8" selection-end-line="60952" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Suite Stand Zone.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -598,9 +579,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Suite Stand Zone.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/CMakeFiles/buffer.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/User.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#97#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookingHotel/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="131">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -608,45 +616,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="LargeFileEditor" />
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/BookingHotel/Hotel.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="36" />
+        <state relative-caret-position="24">
+          <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
           <folding>
             <element signature="e#103#121#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookingHotel/User.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#97#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/buffer.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Hilton.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Customer.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookingHotel/cmake-build-debug/Superior Standard Zone.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/BookingHotel/Admin.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-461">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="454">
+          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
           <folding>
             <element signature="e#104#121#0" expanded="true" />
           </folding>
