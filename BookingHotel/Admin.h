@@ -119,6 +119,7 @@ void checkout(char room[10],char name[10]){
         fputs(buffer, cuFile);
     }
     fclose(cuFile);
+    printf("Check Out Success\n");
 }
 
 
@@ -227,7 +228,7 @@ void addHotel(){
         strcat(price,p);
         fputs(price,room);
 
-        int check_digit = 0;
+        int check_digit = 1;
         do {
             char sroom[10], eroom[10];
             printf("Enter strating room number: ");
@@ -252,20 +253,10 @@ void addHotel(){
                 }
             }
 
-
-
-            for (int i = 0; i < strlen(eroom); i++) {
-                if (!(isdigit(eroom[i]) && isdigit(sroom[i]))) {
-                    check_digit = 1;
-                    break;
-                }
-            }
-
             if (check_digit) {
                 FILE *roomCheck;
                 roomCheck = fopen(strtok(rt,"\n"), "w");
                 int s = atoi(sroom),e = atoi(eroom);
-                printf("%d  %d\n",s,e);
                 if(s < e){
                     while (s <= e){
                         char b[10];
@@ -319,7 +310,6 @@ void menuAdmin(){
             seek_to_next_line();
 
             checkout(room,name);
-//            write(, room);
         }
         else if(command == 3)
             check = 1;

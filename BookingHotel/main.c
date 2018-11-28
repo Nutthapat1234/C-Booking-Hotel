@@ -33,7 +33,7 @@ void home(){
                 search(1);
                 break;
             case 4:
-                menuAdmin();
+                login();  //Username  = Admin , Pass = rootAdmin
                 break;
             case 5:
                 check = 1;

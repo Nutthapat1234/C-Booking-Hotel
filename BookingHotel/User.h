@@ -65,13 +65,16 @@ void search(int version){
                 }
             } else if (version == 1) {
                 if (strcmp(number, input) == 0) {
-                    printf("%s : %s : %s : %s : %s\n",  type);
+                    printf("%s : %s : %s : %s : %s\n", name, number, date, room, type);
                     check = 1;
                 }
             }
         }
 
-        if (check == 0) {
+        if (check == 0 && version == 0) {
+            printf("Can not find this name !!!\n");
+        }
+        else if (check == 0 && version == 1){
             printf("Can not find this name !!!\n");
         }
 
