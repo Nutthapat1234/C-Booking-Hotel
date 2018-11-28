@@ -6,5 +6,5 @@ C_FLAGS = -g   -l sqlite3 -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = @CMakeFiles/BookingHotel.dir/includes_C.rsp
+C_INCLUDES = 
 

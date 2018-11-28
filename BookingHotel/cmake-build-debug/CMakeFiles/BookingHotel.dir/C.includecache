@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/NP-1999/Documents/GitHub/C-Booking-Hotel/BookingHotel/Admin.h
+C:/Users/Orn/CLionProjects/C-Booking-Hotel/BookingHotel/Admin.h
 stdio.h
 -
 string.h
@@ -16,9 +16,9 @@ stdlib.h
 ctype.h
 -
 Hotel.h
-C:/Users/NP-1999/Documents/GitHub/C-Booking-Hotel/BookingHotel/Hotel.h
+C:/Users/Orn/CLionProjects/C-Booking-Hotel/BookingHotel/Hotel.h
 
-C:/Users/NP-1999/Documents/GitHub/C-Booking-Hotel/BookingHotel/Hotel.h
+C:/Users/Orn/CLionProjects/C-Booking-Hotel/BookingHotel/Hotel.h
 stdio.h
 -
 string.h
@@ -26,9 +26,9 @@ string.h
 stdlib.h
 -
 User.h
-C:/Users/NP-1999/Documents/GitHub/C-Booking-Hotel/BookingHotel/User.h
+C:/Users/Orn/CLionProjects/C-Booking-Hotel/BookingHotel/User.h
 
-C:/Users/NP-1999/Documents/GitHub/C-Booking-Hotel/BookingHotel/User.h
+C:/Users/Orn/CLionProjects/C-Booking-Hotel/BookingHotel/User.h
 stdio.h
 -
 string.h
@@ -36,15 +36,15 @@ string.h
 stdlib.h
 -
 
-C:/Users/NP-1999/Documents/GitHub/C-Booking-Hotel/BookingHotel/main.c
+C:/Users/Orn/CLionProjects/C-Booking-Hotel/BookingHotel/main.c
 stdio.h
 -
 string.h
 -
 Hotel.h
-C:/Users/NP-1999/Documents/GitHub/C-Booking-Hotel/BookingHotel/Hotel.h
+C:/Users/Orn/CLionProjects/C-Booking-Hotel/BookingHotel/Hotel.h
 Admin.h
-C:/Users/NP-1999/Documents/GitHub/C-Booking-Hotel/BookingHotel/Admin.h
+C:/Users/Orn/CLionProjects/C-Booking-Hotel/BookingHotel/Admin.h
 User.h
-C:/Users/NP-1999/Documents/GitHub/C-Booking-Hotel/BookingHotel/User.h
+C:/Users/Orn/CLionProjects/C-Booking-Hotel/BookingHotel/User.h
 

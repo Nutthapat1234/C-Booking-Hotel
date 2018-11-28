@@ -22,29 +22,33 @@ void seek_to_next_line( void )
 
 void checkout(char room[10],char name[10]){
     FILE *cuFile,*file;
-    int check_first = 1;
+    int check_first = 1,check = 1;
     char buffer[255];
-    char a[20] = " ";
+    char a[20] = "";
     strcat(a,name);
     cuFile = fopen("Customer.txt","r");
     file = fopen("buffer.txt","w");
-    char bname[10],bphone[10],bdate[10],broom[10],btype[30],type[100];
-    while(fgets(buffer,255,cuFile) != NULL){
+    char bname[25],bphone[10],bdate[10],broom[10],btype[30],type[100],droom[10];
+    while(fgets(buffer,255,cuFile)){
         fputs(buffer,file);
     }
-    fseek(cuFile,0,SEEK_SET);
     fclose(file);
     fclose(cuFile);
     cuFile = fopen("Customer.txt","w");
     file = fopen("buffer.txt","r");
-    ungetc(1,file);
-    while(fscanf(file,"%s : %s : %s : %s : %[^\n]",bname,bphone,bdate,broom,btype)!= EOF){
-        if(!strcmp(bname,a)&& !strcmp(broom,room)){
+    fseek(file,-1,SEEK_CUR);
+    while(fgets(buffer,255,file)!= NULL){
+        char nn[100];
+        sscanf(buffer,"%s : %s : %s : %s : %[^\n]",nn,bphone,bdate,broom,btype);
+        if(!strcmp(name,nn)&& !strcmp(broom,room)){
+            check = 0;
+            strcpy(droom,broom);
             strcpy(type,btype);
             continue;
         }
         else{
             char sub[255] = "";
+            strcat(sub,nn);
             strcat(sub," : ");
             strcat(sub,bphone);
             strcat(sub," : ");
@@ -59,6 +63,10 @@ void checkout(char room[10],char name[10]){
     }
 
     fclose(cuFile);
+    if(check){
+        printf("Can not check out ,can not find your log");
+        return;
+    }
 
     cuFile = fopen(strcat(type,".txt"), "r");
     char n[25];
@@ -97,7 +105,7 @@ void checkout(char room[10],char name[10]){
         strcat(buffer, ar->room_num);
         strcat(buffer, " : ");
 
-        if (strcmp(ar->room_num, broom) == 0) {
+        if (strcmp(ar->room_num, droom) == 0) {
             strcat(buffer, "Avalible");
         }
         else {

@@ -47,12 +47,6 @@ void home(){
 
 int main(int argc, char* argv[]) {
     home();
-//    addHotel();
-//    char b[100];
-//    scanf("%s",b);
-//    seek_to_next_line();
-//    printf("%s",b);
-
 }
 
 

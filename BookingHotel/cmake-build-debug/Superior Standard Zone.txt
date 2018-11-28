@@ -1,8 +1,8 @@
-101 : Avalible
+101 : Full
 102 : Full
 103 : Full
 104 : Full
-105 : Avalible
+105 : Full
 106 : Full
 107 : Full
 108 : Full
