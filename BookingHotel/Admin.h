@@ -234,9 +234,24 @@ void addHotel(){
             scanf("%s", sroom);
             seek_to_next_line();
 
+            for(int i =0;i < strlen(sroom);i++){
+                if(!isdigit(sroom[i])){
+                    printf("Invalid Starting room\n");
+                    continue;
+                }
+            }
+
             printf("Enter ending room number: ");
             scanf("%s", eroom);
             seek_to_next_line();
+
+            for(int i =0;i < strlen(eroom);i++){
+                if(!isdigit(sroom[i])){
+                    printf("Invalid Ending room\n");
+                    continue;
+                }
+            }
+
 
 
             for (int i = 0; i < strlen(eroom); i++) {
