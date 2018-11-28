@@ -1,0 +1,4 @@
+Room Type : standard
+     Description :  sdlhfisd
+     People suggest: 2
+     Price: 5000
